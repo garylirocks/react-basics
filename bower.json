@@ -1,0 +1,17 @@
+{
+  "name": "react-learning",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "garylirocks <gary.li.rocks@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

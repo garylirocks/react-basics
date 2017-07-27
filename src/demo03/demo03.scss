@@ -1,0 +1,16 @@
+.card {
+    img {
+        max-width: 75px;
+    }
+    
+    .cardInfo {
+        display: inline-block;
+        vertical-align: top;
+        margin-left: .5em;
+
+        .name {
+            font-weight: bold;
+            font-size: 1.2em;
+        }
+    }
+}

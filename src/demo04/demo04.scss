@@ -1,0 +1,47 @@
+@import '../../bower_components/font-awesome/scss/font-awesome.scss';
+@import '../../bower_components/bootstrap/scss/bootstrap.scss';
+
+
+.fa-star {
+    font-size: 2em;
+    margin: .5em;
+    color: gold;
+    text-shadow: 1px 1px 1px darkgray;
+}
+
+.number {
+    border-radius: 50%;
+    background-color: darkgray;
+
+    display: inline-block;
+
+    width: 2em;
+    height: 2em;
+    line-height: 1;
+
+    padding: .5em;
+    margin: .5em;
+
+    cursor: pointer;
+
+    text-align: center;
+
+    &:hover {
+        background: lightgray;
+    }
+
+    &.selected {
+        background: lightgray;
+        cursor: not-allowed;
+    }
+
+    &.used {
+        background: lightgreen;
+        cursor: not-allowed;
+    }
+}
+
+.result {
+    font-weight: bold;
+    font-size: 2em;
+}
