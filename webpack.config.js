@@ -7,7 +7,8 @@ module.exports = {
 		demo01_function_component: './src/demo01_function_component.js',
 		demo02_class_component: './src/demo02_class_component.js',
 		demo03: './src/demo03/demo03.js',
-		demo04: './src/demo04/demo04.js',
+		playnine: './src/playnine/playnine.js',
+		author_quiz: './src/author_quiz/author_quiz.js',
 	},
     output: {
         path: path.resolve(__dirname, 'public/js/'),

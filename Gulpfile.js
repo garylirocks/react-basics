@@ -35,6 +35,16 @@ gulp.task('sass', function() {
 			.pipe(notify("CSS updated !"));
 });
 
+gulp.task('copy-thirdparty', function() {
+	let files = [
+					'./bower_components/jquery/dist/jquery.min.js',
+					'./bower_components/bootstrap/dist/css/bootstrap.min.css',
+				];
+			
+	return gulp.src(files, {base: './bower_components'})
+				.pipe(gulp.dest('./public/thirdparty/'));
+});
+
 gulp.task('watch', function() {
 	return gulp
 			.watch(input, ['sass'])
@@ -51,14 +61,14 @@ gulp.task('prod', [], function () {
 			.pipe(gulp.dest(output));
 });
 
-gulp.task('serve', [], function() {
+gulp.task('serve', ['copy-thirdparty'], function() {
 	browserSync.init({
         files: [output, 'public/js/*.js'],
-        proxy: "http://localhost/react/demo04.html",
+        proxy: "http://localhost/react/demo05_author_quiz.html",
     });
 });
 
-gulp.task('local', ['watch'], function(){
+gulp.task('local', ['watch', 'copy-thirdparty'], function(){
 
 });
 
