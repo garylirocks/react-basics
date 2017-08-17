@@ -1,0 +1,25 @@
+.answer {
+    background-color: lightblue;
+    border-left: .2em solid lightblue;
+    padding: 1em;
+
+    &:hover, &.selected {
+        border-left-color: darkblue;
+        cursor: pointer;
+    }
+
+    &.selected {
+        &.correct {
+            background-color: lightgreen;
+        }
+
+        &.wrong {
+            background-color: red;
+        }
+    }
+}
+
+.pullright {
+    float: right;
+    cursor: pointer;
+}
