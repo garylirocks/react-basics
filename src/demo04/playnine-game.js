@@ -120,7 +120,7 @@ const CountdownClock = (props) => {
             <span className="time">{props.remainingTime}</span>
         </div>
     );
-}
+};
 
 class Game extends React.Component {
     static randomNumber = () => 1 + Math.floor(Math.random() * 9);
